@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>si monyet & si kecill</title>
+    <link rel="stylesheet" href="yy.css">
+    <link rel="icon" href="foto.jpg - Salin.jpeg" type="image/x-icon">
+<base target="_blank">
+</head>
+<body>
+
+    <canvas id="partikel-bg"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="heart-icon">✦</span>
+            <span>Our Memories</span>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+
+        <!-- ══ SECTION 1: VIDEO ══ -->
+        <section id="section-video">
+            <div class="album-card" id="albumCard">
+                <div class="cover-wrapper">
+                    <img src="foto.jpg - Salin.jpeg" alt="Kenangan Kita" class="cover-img">
+                </div>
+                <p class="cover-hint">Ketuk untuk membuka kenangan</p>
+            </div>
+
+            <div class="video-container" id="videoContainer">
+                <video id="mainVideo" src="awal.mp4"
+                       preload="metadata" playsinline muted>
+                    Peramban tidak mendukung pemutaran video.
+                </video>
+            </div>
+
+            <div class="section-divider" id="dividerToKepoin">
+                <div class="divider-line"></div>
+                <button class="btn-continue" id="btnToKepoin">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    Kepoin Yuk ☠️
+                </button>
+            </div>
+        </section>
+
+        <!-- ══ SECTION 2: KEPOIN YUK ══ -->
+        <section id="section-kepoin" class="kepoin-wrapper">
+
+            <div class="section-label">
+                <span class="section-eyebrow">Galeri</span>
+                <h2 class="section-title">Kepoin Yuk 😮</h2>
+                <div class="section-title-bar"></div>
+            </div>
+
+            <div class="link-photos">
+                <a href="https://www.instagram.com/dasaaa_d?utm_source=qr&igsh=bmFvMW0wd2JkaTF4" target="_blank">
+                    <div class="cover-wrapper">
+                        <img src="v.jpeg" alt="Foto 1" class="cover-img">
+                    </div>
+                    <p class="photo-caption">monyet</p>
+                </a>
+                <a href="https://www.instagram.com/dasa_rista?utm_source=qr&igsh=cjhhcHdpMW04OW1p" target="_blank">
+                    <div class="cover-wrapper">
+                        <img src="bersama.jpeg" alt="Foto 2" class="cover-img">
+                    </div>
+                    <p class="photo-caption">monyet & bocil kematian</p>
+                </a>
+                <a href="https://www.instagram.com/ristantidwi.19?utm_source=qr&igsh=MW05ODkyY3cyb29paQ==" target="_blank">
+                    <div class="cover-wrapper">
+                        <img src="m.jpeg" alt="Foto 3" class="cover-img">
+                    </div>
+                    <p class="photo-caption">bocill kematian</p>
+                </a>
+            </div>
+
+            <div class="music-card">
+                <div class="music-cover">
+                    <img src="foto.jpg - Salin.jpeg" alt="Sampul Musik" class="music-img">
+                </div>
+                <div class="music-info">
+                    <h3>Terbag Dalam Waktu</h3>
+                    <p>Nama Penyanyi · BARASUARA</p>
+                    <button type="button" id="playPauseBtn" class="play-btn">▶ Putar Musik</button>
+                    <audio id="audioMusic" src="td.mp4" preload="metadata"></audio>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ══ SECTION 3: ALBUM KENANGAN SLIDE ══ -->
+        <section id="section-album">
+
+            <div class="section-label">
+                <span class="section-eyebrow">Koleksi</span>
+                <h2 class="section-title">Album Kenangan 🤏</h2>
+                <div class="section-title-bar"></div>
+            </div>
+
+            <!-- Baris progres -->
+            <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+
+            <div class="album-container">
+                <div class="slide-frame">
+                    <div class="slide-stage" id="slideStage"></div>
+                </div>
+
+                <div class="nav-controls">
+                    <button class="btn-nav" id="btnPrev">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                        Sebelumnya
+                    </button>
+
+                    <div class="slide-indicators" id="indicators"></div>
+                    <div class="page-counter" id="pageCounter">1 / 6</div>
+
+                    <button class="btn-nav" id="btnNext">
+                        Selanjutnya
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+                <!-- ══ SECTION 4: ENDING — FOTO KECIL → VIDEO ══ -->
+        <section id="section-ending">
+            <div class="section-label">
+                <span class="section-eyebrow">Penutup</span>
+                <h2 class="section-title">Terima Kasih 😵‍💫</h2>
+                <div class="section-title-bar"></div>
+            </div>
+
+            <div class="ending-card" id="endingCard">
+                <div class="cover-wrapper">
+                    <img src="1.jpeg" alt="Kenangan Terindah" class="cover-img">
+                </div>
+                <p class="cover-hint">Ketuk untuk melihat pesan terakhir</p>
+            </div>
+
+            <div class="ending-video-container" id="endingVideoContainer">
+                <video id="endingVideo" src="11.mp4"
+                       preload="metadata" playsinline muted>
+                    Peramban tidak mendukung pemutaran video.
+                </video>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="ii.js"></script>
+
+</body>
+</html>
